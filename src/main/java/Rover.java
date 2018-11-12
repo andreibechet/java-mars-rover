@@ -1,5 +1,3 @@
-package Rover;
-
 public class Rover {
 
     private Direction direction;

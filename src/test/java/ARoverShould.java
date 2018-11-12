@@ -1,4 +1,3 @@
-import Rover.Rover;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Test;

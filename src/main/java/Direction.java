@@ -1,5 +1,3 @@
-package Rover;
-
 public enum Direction {
     NORTH("N", "W", "E"),
     EAST("E", "N", "S"),
