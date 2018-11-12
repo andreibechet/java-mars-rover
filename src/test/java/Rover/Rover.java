@@ -3,8 +3,14 @@ package Rover;
 import java.util.Objects;
 
 public class Rover {
+
+    private String direction;
+
+    public Rover(String startingDirection) {
+        direction = startingDirection;
+    }
+
     public String executeCommands(String commands) {
-        String direction = "N";
         for (char command : commands.toCharArray()) {
 
             if (command == 'R') {
