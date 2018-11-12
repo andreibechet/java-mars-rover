@@ -33,4 +33,17 @@ public class ARoverShould {
         String expectedPosition = "0 0 " + startingDirection;
         assertThat(rover.executeCommands(emptyCommands), is(expectedPosition));
     }
+
+    @Test
+    @Parameters({
+        "L, N, 0 0 W",
+        "LL, N, 0 0 S",
+        "LLL, N, 0 0 E",
+        "LLLL, N, 0 0 N",
+    })
+    public void rotate_left(String commands, String startingDirection, String expectedPosition) {
+        // starting 0 0 N
+        Rover rover = new Rover(startingDirection);
+        assertThat(rover.executeCommands(commands), is(expectedPosition));
+    }
 }
